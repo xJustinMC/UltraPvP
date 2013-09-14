@@ -1,5 +1,5 @@
 name: UltraPvP
-main: me.xJustinMC.plugins.UltraPvP.UltraPvP
+main: me.xJustinMC.plugin.UltraPvP.UltraPvP
 version: 1.0
 description: >
              UltraPvP
