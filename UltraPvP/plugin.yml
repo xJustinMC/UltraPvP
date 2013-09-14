@@ -5,5 +5,5 @@ description: >
              UltraPvP
 commands:
   Heal:
-    description: 5 Second Countdown to Heal
+    description: 10 Second Countdown to Heal
     aliases: [h]

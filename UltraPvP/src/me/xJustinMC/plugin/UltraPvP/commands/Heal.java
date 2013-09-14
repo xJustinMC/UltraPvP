@@ -4,16 +4,17 @@ import me.xJustinMC.plugin.UltraPvP.UltraPvP;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Heal extends SubCommand{
+public class Heal implements CommandExecutor{
+	public int number = 1;
+	
 	public UltraPvP plugin;
 	public Heal(UltraPvP instance){
 		instance = plugin;
 	}
-	
-	public int number = 1;
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
 		final Player player = (Player) sender;
@@ -36,29 +37,5 @@ public class Heal extends SubCommand{
 			}, 0L, 100L);
 		}
 		return false;
-	}
-
-	@Override
-	public void onCommand(Player p, String[] args) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public String name() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public String info() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public String[] aliases() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }
