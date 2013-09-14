@@ -1,0 +1,9 @@
+name: UltraPvP
+main: me.xJustinMC.plugins.UltraPvP.UltraPvP
+version: 1.0
+description: >
+             UltraPvP
+commands:
+  Heal:
+    description: 5 Second Countdown to Heal
+    aliases: [h]
